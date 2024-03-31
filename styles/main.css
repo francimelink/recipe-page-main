@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap');
+
+:root {
+    --primary-color-numteg: hsl(14, 45%, 36%);
+    --primary-color-darkrasberry: rgb(123, 40, 79);
+
+    --natural-color-white: hsl(0, 0%, 100%);
+    --natural-color-rosewhite: hsl(330, 100%, 98%);
+    --natural-color-eggshell: hsl(30, 54%, 90%);
+    --natural-color-lightgray: hsl(30, 18%, 87%);
+    --natural-color-wengebrown: hsl(30, 10%, 34%);
+    --natural-color-darkcharcoal: hsl(24, 5%, 18%);
+
+    --font-weight-light: 400;
+    --font-weight-middle: 600;
+    --font-weight-bold: 700;
+
+
+    --font-outfit: 'Outfit', sans-serif;
+    --font-young-serif: 'Young Serif', serif;
+
+}
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--natural-color-eggshell);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: var(--font-outfit);
+}
+
+.disc {
+    font-size: inherit;
+}
+
+.strong {
+    font-weight: var(--font-weight-bold);
+}
+
+
+main {
+    background-color: var(--natural-color-white);
+    width: 100%;
+    max-width: 736px;
+    font-size: 1rem;
+}
+
+section {
+    padding: 2.5rem 2rem;
+}
+
+.header picture,
+.header img {
+    width: 100%;
+}
+
+section>h1 {
+    font-size: 2.25rem;
+    font-family: var(--font-young-serif);
+    margin-bottom: 1.5rem;
+}
+
+section>p {
+    color: var(--natural-color-wengebrown);
+    line-height: 1.4;
+}
+
+article {
+    margin-top: 2rem;
+}
+
+.article-title {
+    color: var(--primary-color-numteg);
+    font-size: 1.5rem;
+    font-family: var(--font-young-serif);
+}
+
+.prep {
+    background-color: rgba(123, 40, 79, .1);
+    padding: 1.5rem;
+    border-radius: .75rem;
+    font-size: large;
+}
+
+.prep>h2 {
+    font-size: small;
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-color-darkrasberry);
+}
+
+.prep>ul {
+    color: var(--natural-color-wengebrown);
+    margin-top: 1rem;
+}
+
+.prep li {
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.prep .disc {
+    color: var(--primary-color-darkrasberry);
+}
+
+.prep p {
+    margin-left: 1rem;
+}
+
+
+
+.ingredients,
+.instructions {
+    border-bottom: 1px solid var(--natural-color-rosewhite);
+    padding-bottom: 2rem;
+}
+
+.ingredients ul {
+    margin-top: 1.5rem;
+}
+
+.ingredients li {
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+.ingredients li:last-of-type {
+    margin-bottom: 0;
+}
+
+.ingredients .disc {
+    color: var(--primary-color-numteg);
+    padding-left: .5px;
+}
+
+.ingredients p {
+    margin-left: 1rem;
+    color: var(--natural-color-wengebrown);
+}
+
+.instructions ol {
+    margin-top: 1.5rem;
+    list-style-type: decimal;
+    list-style-position: outside;
+    padding-left: 1.5rem;
+
+}
+
+.instructions li {
+    line-height: 1.25;
+    margin-bottom: .5rem;
+    color: var(--natural-color-wengebrown);
+    padding-left: 1rem;
+}
+
+.instructions li::marker {
+    color: var(--primary-color-numteg);
+    font-weight: var(--font-weight-bold);
+}
+
+
+.nutrition {
+    color: var(--natural-color-wengebrown);
+}
+
+.nutrition p {
+    margin: 1.5rem 0;
+}
+
+.nutrition .table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.nutrition .cell {
+    padding: .75rem 0;
+    border-bottom: 1px solid var(--natural-color-rosewhite);
+}
+
+.nutrition .cell.values {
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-color-numteg);
+}
+
+.nutrition .cell:nth-child(7),
+.nutrition .cell:nth-child(8) {
+    border-bottom: none;
+}
+
+
+@media only screen and (min-width: 992px) {
+    main {
+        padding: 2.5rem;
+        border-radius: 1.5rem;
+    }
+
+    .header img {
+        border-radius: .75rem;
+    }
+
+    section {
+        margin-top: 2.5rem;
+        padding: 0;
+    }
+}
+
+
+/* Trenutna poraba 75min */
